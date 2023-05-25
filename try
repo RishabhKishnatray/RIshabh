@@ -1,11 +1,11 @@
 pipeline {
     agent any
-    tool {
-      mevan
+    tools {
+      maven 'maven'
     }
 
     stages {
-        stage('man package') {
+        stage('mvn package') {
             steps {
               sh ' mvn package ' 
             }

@@ -5,10 +5,17 @@ pipeline {
     }
 
     stages {
-        stage('mvn clean package') {
+        stage('mvn package') {
             steps {
               sh ' mvn package ' 
             }
         }
+           stage('builded') {
+            steps {
+            echo '132'
+               
+            }
+        }
+        
     }
 }

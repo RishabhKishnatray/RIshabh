@@ -1,0 +1,14 @@
+pipeline {
+    agent any
+    tool {
+      mevan
+    }
+
+    stages {
+        stage('man package') {
+            steps {
+              sh ' mvn package ' 
+            }
+        }
+    }
+}
